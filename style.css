@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: blue;
+}
+
+.body {
+    display: grid;
+    grid-template-rows: 20vh 80vh 15vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'h h h' 'm m a' 'f f f';
+    grid-gap: 2mm;
+}
+
+header {
+    background: yellow;
+    grid-area: h;
+}
+
+main {
+    background: grey;
+    grid-area: m;
+}
+
+aside {
+    background: white;
+    grid-area: a;
+}
+
+footer {
+    background: grey;
+    grid-area: f;
+}
