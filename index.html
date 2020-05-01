@@ -7,14 +7,21 @@
 </head>
 
 <body>
-    <div class='list' id='list'>
-        <ul>
-        </ul>
-    </div>
-    <div class='buttons' id='buttons'>
-        <ul>
-        </ul>
-    </div>
+    <section class="header">
+        <h1>Just do list</h1>
+    </section>
+    <section class="main">
+        <div class='form_wrapper'>
+            <button type="text" class="button" id="clearButton">Clear</button>
+            <br />
+            <div class='task_list' id='task_list'></div>
+            <div class='dtask_list' id='dtask_list'></div>
+            <div class='form_block' id='buttons'>
+                <input placeholder="New task" type="text" id="itask" />
+                <!-- <button type="text" class="addbutton" id="addButton">Add</button> !-->
+            </div>
+        </div>
+    </section>
     <script src="todolist.js"></script>
 </body>
 
